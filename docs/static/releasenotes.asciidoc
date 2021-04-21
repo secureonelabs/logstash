@@ -3,6 +3,7 @@
 
 This section summarizes the changes in the following releases:
 
+* <<logstash-7-13-0,Logstash 7.13.0>>
 * <<logstash-7-12-0,Logstash 7.12.0>>
 * <<logstash-7-11-2,Logstash 7.11.2>>
 * <<logstash-7-11-1,Logstash 7.11.1>>
@@ -41,6 +42,54 @@ This section summarizes the changes in the following releases:
 * <<logstash-7-0-0-beta1,Logstash 7.0.0-beta1>>
 * <<logstash-7-0-0-alpha2,Logstash 7.0.0-alpha2>>
 * <<logstash-7-0-0-alpha1,Logstash 7.0.0-alpha1>>
+
+[[logstash-7-13-0]]
+=== Logstash 7.13.0 Release Notes
+
+---------- DELETE FROM HERE ------------
+=== Logstash Pull Requests with label v7.13.0
+
+* Switch to AdoptOpenJDK15 from OpenJDK15 https://github.com/elastic/logstash/pull/12649[#12649]
+* Geoip database service https://github.com/elastic/logstash/pull/12675[#12675]
+* GeoIP clean up database after new download https://github.com/elastic/logstash/pull/12689[#12689]
+* Backport PR #12693 to 7.x: update jdk to 11.0.10+9 https://github.com/elastic/logstash/pull/12700[#12700]
+* Backport PR #12692 to 7.x: cleanup bundler exclusions during jruby unpacking https://github.com/elastic/logstash/pull/12702[#12702]
+* [7.x] Geoip database service (#12675) | GeoIP clean up database after new download (#12689) https://github.com/elastic/logstash/pull/12709[#12709]
+* [backport 7.x] Removed OpenJDK15 in CI matrix testing #12649 https://github.com/elastic/logstash/pull/12710[#12710]
+* Temporarly silenced an x-pack monitoring test, waiting to be fixed the root cause https://github.com/elastic/logstash/pull/12712[#12712]
+* fix broken xpack unit test of GeoIP term of service https://github.com/elastic/logstash/pull/12715[#12715]
+* [backport #12712 7.x]Temporarly silenced an x-pack monitoring test https://github.com/elastic/logstash/pull/12718[#12718]
+* Deps: update slf4j to latest 1.7.30 https://github.com/elastic/logstash/pull/12720[#12720]
+* Backport PR #12699 to 7.x: update jruby to 9.2.16.0 https://github.com/elastic/logstash/pull/12721[#12721]
+* Backport PR #12720 to 7.x: Deps: update slf4j to latest 1.7.30 https://github.com/elastic/logstash/pull/12723[#12723]
+* Deps: update log4j2 to latest and ship log4j 1.2 bridge https://github.com/elastic/logstash/pull/12724[#12724]
+* change domain and endpoint of GeoIP database service https://github.com/elastic/logstash/pull/12727[#12727]
+* Backport PR #12728 to 7.x: [Build] Fix version script when VERSION_QU… https://github.com/elastic/logstash/pull/12729[#12729]
+* Backport PR #12736 to 7.x: Fix Benchmarking tool https://github.com/elastic/logstash/pull/12738[#12738]
+* Backport PR #12724 to 7.x: Deps: update log4j2 to latest and ship log4j 1.2 bridge https://github.com/elastic/logstash/pull/12744[#12744]
+* internal-monitoring: use configured ssl verification mode https://github.com/elastic/logstash/pull/12749[#12749]
+* Backport PR #12749 to 7.x: internal-monitoring: use configured ssl verification mode https://github.com/elastic/logstash/pull/12750[#12750]
+* GeoIP database add license files https://github.com/elastic/logstash/pull/12756[#12756]
+* Build: avoid leaking memory from generate_plugins_version https://github.com/elastic/logstash/pull/12763[#12763]
+* Backport PR #12763 to 7.x: Build: avoid leaking memory from generate_plugins_version https://github.com/elastic/logstash/pull/12772[#12772]
+* [7.x] Geoip database service (#12675) | GeoIP clean up database after new download (#12689) | fix broken test case of term of service (#12715) | change domain and endpoint of GeoIP database service (#12727) | GeoIP database add license file https://github.com/elastic/logstash/pull/12777[#12777]
+* Set correct permissions for /usr/share/logstash on pkg installs https://github.com/elastic/logstash/pull/12782[#12782]
+* Fix: logstash-keystore failing with an error https://github.com/elastic/logstash/pull/12784[#12784]
+* plugin manager uninstall plugin regardless of working directory https://github.com/elastic/logstash/pull/12786[#12786]
+* Backport PR #12782 to 7.x: Set correct permissions for /usr/share/logstash on pkg installs https://github.com/elastic/logstash/pull/12788[#12788]
+* Removed static part from PluginRegistry to avoid static initializer https://github.com/elastic/logstash/pull/12799[#12799]
+* Docs: note on quoted field references https://github.com/elastic/logstash/pull/12801[#12801]
+
+=== Logstash Commits between 7.13 and 7.12.1
+
+Computed with "git log --pretty=format:'%h -%d %s (%cr) <%an>' --abbrev-commit --date=relative v7.12.1..7.13"
+
+=== Logstash Plugin Release Changelogs ===
+Computed from "git diff v7.12.1..7.13 *.release"
+Changed plugin versions:
+---------- DELETE UP TO HERE ------------
+
+==== Plugins
 
 [[logstash-7-12-0]]
 === Logstash 7.12.0 Release Notes
